@@ -212,24 +212,89 @@
 }
 
 .triple-container {
-    width: 414px;
+    outline: 2px solid tomato;
     
-
 }
 
 .triple-text {
     margin-top: 0;
     margin-bottom: 8px;
 
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Times New Roman', serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
-    /* identical to box height */
-
-
+    line-height: 1.15;
     color: var(--grey-text-color);
+    text-align: right;
 }
+
+.triple-logo {
+  margin-bottom: 32px;
+
+  font-family: 'Film P3';
+font-weight: 700;
+font-size: 40px;
+line-height: 1.08;
+letter-spacing: 0.3em;
+color: var(--title-text-color);
+text-align: right;
+}
+
+.triple-title {
+  margin-bottom: 12px;
+
+  font-family: 'Times New Roman', serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+color: var(--black-text-color);
+text-align: right;
+}
+
+.triple-description {
+  max-width: 242px;
+  margin-bottom: 32px;
+  margin-left: 83px;
+
+  font-family: 'Montserrat';
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: var(--dark-grey-text-color);
+text-align: left;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .triple-section {
+    padding-top: 66px;
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .triple-section {
+    padding-top: 72px;
+
+  }
+}
+
 
 /* :root {
   
