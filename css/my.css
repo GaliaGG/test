@@ -383,14 +383,11 @@ text-align: left;
 
 /*-------------- Slider ------------*/
 .triple-swiper {
-  width: 100%;
-  height: 194px;
-  margin-bottom: 72px;
-  margin-left: 115px;
+  
   }
   
-  .triple-wraper {
-  /* column-gap: 16px; */
+.triple-wraper {
+  
   }
   
 @media screen and (min-width: 1024px) {
@@ -429,12 +426,9 @@ text-align: left;
   }
   }
   
-  .swiper-slide {
-  background-color: var(--hero-text-color);
-  justify-content: center;
-  align-items: center;
-  max-width: 194px;
-  }
+.swiper-slide {
+
+}
 /*--------------END Slider ------------*/
 
 .triple-btn {
