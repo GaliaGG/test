@@ -197,16 +197,32 @@
       <!------------- Modal ------------>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" class="modal-btn" data-modal-close>
-            <svg class="svg-close">
-              <use href="./img/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+            <button type="button" class="modal-btn" data-modal-close>
+                <svg class="svg-close">
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="modal-title">ЦІНИ НА НОМЕР</h2>
+            <form>
+                <label for="category">Категорія номеру</label>
+                <select name="category" id="category">
+                    <option value="2" selected>Двомісний номер</option>
+                    <option value="3">Трьохмісний номер</option>
+                    <option value="2l">Двомісний люкс</option>
+                </select>
+
+                <label>
+                    <span>Кількість ночей</span>
+                    <input type="number" name="night" value="1" min="1" max="365">
+                </label>
+            </form>
+            
+
 
         </div>
 
 
-      </div>
+        </div>
       
 
     </main>
