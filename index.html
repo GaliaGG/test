@@ -43,16 +43,38 @@
               Velit officia consequat duis enim velit mollit. Exercitation veniam
               consequat sunt nostrud amet.
             </p>
-        </div>
+          </div>
           
-          <img class="triple-img"
-            src="./img/triple-main1x.jpg"
-            alt="Фото просторого номера зі зручним ліжком та великим вікном"
-            srcset="
+          <picture>
+            <source
+              srcset="
               ./img/triple-main1x.jpg 1x,
               ./img/triple-main2x.jpg 2x
             "
-          />
+            media="(max-width: 1023px)"
+            >
+            <source
+              srcset="
+              ./img/triple-main1x-tab.jpg 1x,
+              ./img/triple-main2x-tab.jpg 2x
+            "
+            media="(min-width: 1024px)"
+            >
+            <source
+              srcset="
+              ./img/triple-main1x-desk.jpg 1x,
+              ./img/triple-main2x-desk.jpg 2x
+            "
+            media="(min-width: 1280px)"
+            >
+
+            <img class="triple-img"
+            src="./img/triple-main1x-desk.jpg"
+            alt="Фото просторого номера зі зручним ліжком та великим вікном"
+            />
+
+          </picture>
+          
           
           <div class="triple-united">
             <div class="swiper">
@@ -133,8 +155,6 @@
             </ul>
           </div>
 
-        
-        
       </section>
       
 
