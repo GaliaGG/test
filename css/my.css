@@ -293,6 +293,7 @@ text-align: right;
 
 .triple-about {
   margin-left: 81px;
+  margin-bottom: 32px;
 }
 
 .triple-title {
@@ -308,9 +309,7 @@ color: var(--black-text-color);
 
 .triple-description {
 max-width: 242px;
-margin-bottom: 32px;
-
-font-family: 'Montserrat';
+  
 font-weight: 600;
 font-size: 12px;
 line-height: 1.25;
@@ -353,29 +352,38 @@ text-align: left;
 }
 }
 
-.triple-img {
-  width: 244px;
-  background-color: var(--hero-text-color);
+.triple-picture {
   margin-bottom: 32px;
 }
 
+.triple-img {
+  width: 100%;
+  max-width: 244px;
+  background-color: var(--hero-text-color);
+  
+}
+
 @media screen and (min-width: 1024px) {
-  .triple-img {
+.triple-picture {
+  margin-bottom: 48px; 
+}
+
+.triple-img {
       position: relative;
       top: 0;
       left: 0;
       z-index: 10;
       
-      width: 400px;
+      max-width: 400px;
       margin-top: -430px;
       margin-left: 97px;
-      margin-bottom: 48px; 
+      
   }
 }
 
 @media screen and (min-width: 1280px) {
   .triple-img {
-  width: 460px;
+  max-width: 460px;
   margin-top: -470px;
   margin-left: 165px;
   }
@@ -431,10 +439,14 @@ text-align: left;
 }
 /*--------------END Slider ------------*/
 
+.triple-list {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .triple-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  
   min-width: 236px;
   height: 48px;
   background-color: var(--background-button-color);
@@ -454,7 +466,12 @@ text-align: left;
   }
   
   .btn-details {
-  margin-bottom: 16px;
+    display: inline-block;
+    
+  }
+
+  .triple-item:nth-child(1) {
+    margin-bottom: 16px;
   }
   
   .triple-btn:hover,
@@ -462,6 +479,7 @@ text-align: left;
   background-color: var(--hero-text-color);
   border: 2px solid var(--akzent-yellow);
   }
+
 
 
 /* -----------Modal----------- */
